@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: rgb(101, 95, 133);
+    box-shadow: 0 5px 15px rgb(230, 230, 230);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+#navbar li{
+list-style: none;
+padding: 0 20px;
+position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+} 
+
+#navbar li a:hover,
+#navbar li.active {
+color: rgb(0, 255, 17);
+}
+
+#navbar li a.active::after,
+#navbar li a.hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(255, 98, 0);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#hero{
+    background-image: url("peakpx (1).jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hero h4 {
+    padding-bottom: 50px;
+}
+#hero h3 {
+    color: rgb(255, 255, 255);
+}
+#hero h2 {
+    color: rgb(255, 255, 255);
+}
+#hero button{
+    background-image: url("—Pngtree—red button_225105.png");
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    border: 10;
+    padding: 14 80px 14px 80px ;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700px;
+    font-size: 12px;
+
+}
